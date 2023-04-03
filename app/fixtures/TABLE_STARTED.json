@@ -1,0 +1,9 @@
+{
+  "blinds": {
+    "big": 20,
+    "small": 10
+  },
+  "button_index": 0,
+  "id": "e34de864",
+  "seats": [null, null, null, null, null, null]
+}

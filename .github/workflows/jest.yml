@@ -1,0 +1,25 @@
+name: Jest Tests
+
+on: [workflow_call]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+          key: v3-yarn-cache-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run Tests
+        run: yarn test

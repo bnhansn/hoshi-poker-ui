@@ -1,0 +1,48 @@
+{
+  "tables": [
+    {
+      "blinds": {
+        "big": 20,
+        "small": 10
+      },
+      "button_index": 0,
+      "id": "6049d72b",
+      "seats": [
+        {
+          "chips": 820,
+          "id": 1,
+          "status": "inactive",
+          "username": "user1"
+        },
+        {
+          "chips": 1100,
+          "id": 2,
+          "status": "inactive",
+          "username": "user2"
+        },
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "blinds": {
+        "big": 20,
+        "small": 10
+      },
+      "button_index": 0,
+      "id": "39afd5c0",
+      "seats": [null, null, null, null, null, null]
+    },
+    {
+      "blinds": {
+        "big": 50,
+        "small": 25
+      },
+      "button_index": 0,
+      "id": "cd931733",
+      "seats": [null, null, null, null, null, null]
+    }
+  ]
+}

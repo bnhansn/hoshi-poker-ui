@@ -1,0 +1,52 @@
+{
+  "game": {
+    "board": [],
+    "hands": [],
+    "pots": [],
+    "rake": 0,
+    "round": null,
+    "waiting_on_player_id": null
+  },
+  "messages": [
+    {
+      "id": "547a8e49-441b-4f84-97da-9821eb707139",
+      "inserted_at": "2023-03-26T19:40:48.366675Z",
+      "player_id": "dealer",
+      "text": "Player 2 wins pot (20)"
+    },
+    {
+      "id": "994cf48f-d95d-4f37-b637-01c40a271b39",
+      "inserted_at": "2023-03-27T00:31:56.630486Z",
+      "player_id": "dealer",
+      "text": "Player 2 wins pot (20)"
+    },
+    {
+      "id": "51de4c38-2bd2-4b00-afed-a4de1590c4d9",
+      "inserted_at": "2023-03-26T19:36:06.168897Z",
+      "player_id": 2,
+      "text": "hello"
+    }
+  ],
+  "table": {
+    "blinds": {
+      "big": 20,
+      "small": 10
+    },
+    "button_index": 1,
+    "id": "0cb090e2",
+    "seats": [
+      {
+        "chips": 980,
+        "id": 2,
+        "status": "active",
+        "username": "user2"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "time_bank": null
+}

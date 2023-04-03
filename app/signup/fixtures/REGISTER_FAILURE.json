@@ -1,0 +1,6 @@
+{
+  "errors": {
+    "password": ["should be at least 8 character(s)"],
+    "username": ["should be at least 2 character(s)"]
+  }
+}

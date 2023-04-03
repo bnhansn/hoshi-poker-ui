@@ -1,0 +1,21 @@
+{
+  "blinds": {
+    "big": 20,
+    "small": 10
+  },
+  "button_index": 0,
+  "id": "39afd5c0",
+  "seats": [
+    {
+      "chips": 0,
+      "id": 2,
+      "status": "inactive",
+      "username": "user2"
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}
