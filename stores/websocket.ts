@@ -1,8 +1,8 @@
 import { makeAutoObservable, runInAction } from 'mobx'
 import { Socket } from 'phoenix'
+import { logger } from '@/lib/logger'
 import { ApiService } from '@/services'
 import { RootStore } from '@/stores/root'
-import { logger } from '@/utils/logger'
 
 export class WebSocketStore {
   api: ApiService

@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { observer } from 'mobx-react-lite'
 import { useRouter } from 'next/navigation'
 import { Alert, Button, Input, Label } from '@/components'
+import { getFieldErrors } from '@/lib/error'
 import { useStore } from '@/stores'
-import { getFieldErrors } from '@/utils/error'
 
 export default observer(function Page() {
   const { sessionStore } = useStore()

@@ -1,5 +1,5 @@
 import NextLink, { LinkProps } from 'next/link'
-import { cn } from '@/styles/utils'
+import { cn } from '@/lib/utils'
 
 export function ButtonLink({
   className,

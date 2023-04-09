@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import { TableApiService } from './table'
 import { UserApiService } from './user'
-import storage from '@/utils/storage'
+import storage from '@/lib/storage'
 
 const ENV = process.env.NODE_ENV ?? 'production'
 

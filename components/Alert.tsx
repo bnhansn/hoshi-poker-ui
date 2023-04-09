@@ -1,4 +1,4 @@
-import { cn } from '@/styles/utils'
+import { cn } from '@/lib/utils'
 
 type Severity = 'default' | 'info' | 'danger' | 'success' | 'warning'
 

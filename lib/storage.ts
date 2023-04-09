@@ -1,4 +1,4 @@
-import { logger } from '@/utils/logger'
+import { logger } from '@/lib/logger'
 
 interface IStorage {
   getItem: (key: string) => string | null

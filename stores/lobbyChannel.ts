@@ -1,9 +1,9 @@
 import { makeAutoObservable } from 'mobx'
 import { Channel } from 'phoenix'
+import { logger } from '@/lib/logger'
 import { Table } from '@/models'
 import { ApiService } from '@/services'
 import { RootStore } from '@/stores/root'
-import { logger } from '@/utils/logger'
 
 export class LobbyChannel {
   channel: Channel | undefined

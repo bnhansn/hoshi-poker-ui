@@ -1,4 +1,6 @@
+export * from './Card'
 export * from './Game'
+export * from './Hand'
 export * from './Message'
 export * from './Player'
 export * from './Table'

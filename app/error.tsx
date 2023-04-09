@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 import { Button } from '@/components'
-import { logger } from '@/utils/logger'
+import { logger } from '@/lib/logger'
 
 export default function Error({ error }: { error: Error }) {
   useEffect(() => {

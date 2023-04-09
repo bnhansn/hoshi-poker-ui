@@ -2,8 +2,8 @@ import { screen, waitFor } from '@testing-library/react'
 import { AppContainer } from './AppContainer'
 import { AppHeader } from './AppHeader'
 import GET_CURRENT_USER_SUCCESS from './fixtures/GET_CURRENT_USER_SUCCESS.json'
+import storage from '@/lib/storage'
 import { render, TestWrapper } from '@/test'
-import storage from '@/utils/storage'
 
 test('shows logged in user and button to logout', async () => {
   storage.setItem('token', 'some-token')

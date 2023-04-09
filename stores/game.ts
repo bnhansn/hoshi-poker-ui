@@ -96,13 +96,13 @@ export class GameStore {
 
   playerHand(playerId: number | undefined) {
     if (playerId) {
-      return this.hands.find((h) => h.player_id === playerId)
+      return this.hands.find((h) => h.playerId === playerId)
     }
   }
 
   get highestPendingBet() {
     return Math.max(
-      ...Object.values(this.hands).map((hand) => Number(hand.pending_bet))
+      ...Object.values(this.hands).map((hand) => Number(hand.pendingBet))
     )
   }
 
@@ -122,7 +122,7 @@ export class GameStore {
   }
 
   get currentPlayerPendingBet() {
-    return this.currentPlayerHand?.pending_bet ?? 0
+    return this.currentPlayerHand?.pendingBet ?? 0
   }
 
   get currentPlayerChips() {

@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite'
-import { Card } from './Card'
+import { PlayingCards } from './PlayingCards'
 import { SeatContainer } from './SeatContainer'
 import { TimeBankBar } from './TimeBankBar'
 import { useStore } from '@/stores'
@@ -25,7 +25,7 @@ export const Seat = observer(function Seat({ index }: { index: number }) {
         <>
           {hand && (
             <span className="text-center">
-              {hand.folded ? 'Folded' : `Bet: ${hand.pending_bet}`}
+              {hand.folded ? 'Folded' : `Bet: ${hand.pendingBet}`}
             </span>
           )}
           {player && (
@@ -36,14 +36,10 @@ export const Seat = observer(function Seat({ index }: { index: number }) {
           )}
         </>
       </div>
-      <div className="flex flex-1 justify-around">
-        {!hand?.folded &&
-          hand?.hole_cards.map((card, i) => {
-            const key = card === 'facedown' ? i : `${card.rank}-${card.suit}`
-            return <Card key={key} card={card} />
-          })}
+      <div className="flex justify-around">
+        <PlayingCards cards={hand?.cards} />
       </div>
-      {hand?.display_rank && <b>{hand.display_rank}</b>}
+      {hand?.displayRank && <b>{hand.displayRank}</b>}
       {hasButton && <div className="text-red-500">BUTTON</div>}
     </SeatContainer>
   )
