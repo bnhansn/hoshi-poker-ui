@@ -157,7 +157,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -170,7 +170,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -183,7 +183,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -196,7 +196,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -212,7 +212,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -225,7 +225,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -238,7 +238,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -251,7 +251,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }
@@ -264,7 +264,7 @@ export class TableChannel {
           .receive('ok', resolve)
           .receive('error', reject)
       } else {
-        reject()
+        reject('WebSocket connection lost')
       }
     })
   }

@@ -10,7 +10,7 @@
           { "rank": 9, "suit": "diamond" },
           { "rank": 7, "suit": "spade" }
         ],
-        "pending_bet": 10,
+        "pending_bet": 20,
         "player_id": 1
       },
       {
@@ -25,15 +25,16 @@
     "pots": [],
     "rake": 0,
     "round": "preflop",
-    "waiting_on_player_id": 1
+    "waiting_on_player_id": 2
   },
+  "player_id": 1,
   "table": {
     "blinds": { "big": 20, "small": 10 },
     "button_index": 1,
     "id": "b0a8ca7d",
     "seats": [
       {
-        "chips": 1040,
+        "chips": 1030,
         "id": 1,
         "status": "active",
         "username": "user1"

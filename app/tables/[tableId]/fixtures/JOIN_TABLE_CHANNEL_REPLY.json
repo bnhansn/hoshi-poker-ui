@@ -33,15 +33,20 @@
       "small": 10
     },
     "button_index": 1,
-    "id": "0cb090e2",
+    "id": "b0a8ca7d",
     "seats": [
       {
-        "chips": 980,
+        "chips": 1040,
+        "id": 1,
+        "status": "active",
+        "username": "user1"
+      },
+      {
+        "chips": 930,
         "id": 2,
         "status": "active",
         "username": "user2"
       },
-      null,
       null,
       null,
       null,
