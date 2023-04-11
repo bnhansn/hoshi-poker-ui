@@ -20,14 +20,18 @@ export function PlayingCard({
   card: Card
   style?: Record<string, SpringValue<number>>
 }) {
+  const textColor = ['heart', 'diamond'].includes(card.suit ?? '')
+    ? 'text-red-600'
+    : 'text-slate-900'
+
   return (
     <animated.div
-      className={`bg-gray-400 text-gray-900 rounded-sm`}
+      className="bg-gray-400 text-gray-900 rounded-sm"
       style={{ width: CARD_WIDTH, height: CARD_HEIGHT, ...style }}
       data-testid={card.isFaceup() ? `${card.rank}-${card.suit}` : 'facedown'}
     >
       {card.isFaceup() && (
-        <>
+        <div className={`${textColor}`}>
           <span>
             {card.suit === 'spade' && '♠️'}
             {card.suit === 'club' && '♣️'}
@@ -35,7 +39,7 @@ export function PlayingCard({
             {card.suit === 'diamond' && '♦️'}
           </span>
           <span> {card.rank}</span>
-        </>
+        </div>
       )}
     </animated.div>
   )
@@ -66,8 +70,6 @@ export function PlayingCards({ cards = [] }: { cards: Card[] | undefined }) {
   })
 
   return transitions((style, card) => {
-    if (card) {
-      return <PlayingCard card={card} style={style} />
-    }
+    return <PlayingCard card={card} style={style} />
   })
 }

@@ -1,4 +1,4 @@
-import { StopCircleIcon } from '@heroicons/react/24/solid'
+import StopCircleIcon from '@heroicons/react/24/solid/StopCircleIcon'
 import { observer } from 'mobx-react-lite'
 import Link from 'next/link'
 import { Button } from '@/components'

@@ -1,5 +1,4 @@
 import { screen, waitFor } from '@testing-library/react'
-import { AppContainer } from './AppContainer'
 import { AppHeader } from './AppHeader'
 import GET_CURRENT_USER_SUCCESS from './fixtures/GET_CURRENT_USER_SUCCESS.json'
 import storage from '@/lib/storage'
@@ -12,15 +11,10 @@ test('shows logged in user and button to logout', async () => {
     value: new URL('http://localhost:3000/some-page')
   })
 
-  const { user } = render(
-    <AppContainer>
-      <AppHeader />
-    </AppContainer>,
-    {
-      wrapper: TestWrapper,
-      mocks: [['GET', '/me', GET_CURRENT_USER_SUCCESS]]
-    }
-  )
+  const { user } = render(<AppHeader />, {
+    wrapper: TestWrapper,
+    mocks: [['GET', '/me', GET_CURRENT_USER_SUCCESS]]
+  })
 
   await waitFor(() => {
     expect(screen.getByText('user1')).toBeInTheDocument()
@@ -34,12 +28,11 @@ test('shows logged in user and button to logout', async () => {
 })
 
 test('shows login and signup buttons if no user is logged in', async () => {
-  const { user, router } = render(
-    <AppContainer>
-      <AppHeader />
-    </AppContainer>,
-    { url: '/', wrapper: TestWrapper }
-  )
+  const { user, router } = render(<AppHeader />, {
+    url: '/',
+    wrapper: TestWrapper,
+    authenticated: false
+  })
 
   expect(router.asPath).toBe('/')
 
